@@ -197,7 +197,6 @@ def get_transform_plan(js: str) -> List[str]:
     return regex_search(pattern, js, group=1).split(";")
 
 
-def get_transform_object(js: str, var: str) -> List[str]:
     """Extract the "transform object".
 
     The "transform object" contains the function definitions referenced in the
@@ -219,6 +218,7 @@ def get_transform_object(js: str, var: str) -> List[str]:
     'kT:function(a,b){var c=a[0];a[0]=a[b%a.length];a[b]=c}']
 
     """
+def get_transform_object(js: str, var: str) -> List[str]:
     pattern = r"var %s={(.*?)};" % re.escape(var)
     logger.debug("getting transform object")
     regex = re.compile(pattern, flags=re.DOTALL)
