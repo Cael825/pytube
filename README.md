@@ -11,6 +11,8 @@
 
 ### Actively soliciting contributors!
 
+PYTUBE NOT WORKING FOR OFFICIAL MUSICVIDEOS AND SUCH: https://github.com/pytube/pytube/issues/399 
+
 Have ideas for how pytube can be improved? Feel free to open an issue or a pull request!
 
 # pytube
